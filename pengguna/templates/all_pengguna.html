@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Data Pengguna
+{% endblock %}
+
+{% block content %}
+    <h3>Pengguna</h3>
+
+    <ul>
+        {% for p in data_pengguna %}
+            <li><a href="detailpengguna/{{ p.id }}">{{ p.nama }} - {{ p.email }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

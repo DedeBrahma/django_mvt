@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>If Elif Tag</h1>
+    {% with nilai=100 %}
+        <h2> Nilai: {{ nilai }}</h2>
+        {% if nilai == 100 %}
+            <h3>Terbaik</h3>
+        {% elif nilai == 90 %}
+            <h3>Kamu Hebat</h3>
+        {% endif %}
+    {% endwith %}
+
+    <h1>If Else Tag</h1>
+    {% with nilai2=85 %}
+        <h2> Nilai: {{ nilai2 }}</h2>
+        {% if nilai2 == 100 %}
+            <h3>Terbaik</h3>
+        {% elif nilai2 == 90 %}
+            <h3>Kamu Hebat</h3>
+        {% else %}
+            <h3>Bagus</h3>
+        {% endif %}
+    {% endwith %}
+
+</body>
+</html>
